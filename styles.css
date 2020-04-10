@@ -1,0 +1,60 @@
+h1{
+    padding:36px;
+    margin:0px 0px;
+    font-size:36px;
+}
+.wSummary{
+    padding-bottom:5px;
+}
+.wSummaryP{
+    padding-top:5px;
+}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p{
+    font-family: 'Open Sans', sans-serif;
+    padding:36px;
+    margin:0px 0px;
+    font-size:13px;
+}
+body{
+    padding:0,0,0,0;
+    font-family: 'Poiret One', cursive;
+    
+}
+div{
+    background-color:rgb(212, 171, 80);
+    color:rgb(61, 46, 13);
+    margin:10px;
+}
+
+#gameArea{
+    margin:auto auto;
+    display:grid;
+    grid-gap:1px;
+    width:90%;
+    background-color:white;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid{
+    margin:1px;
+    background-color:rgb(53, 46, 46);
+    height:10px;
+}
+
+.gridHL{
+    margin:1px;
+    background-color:rgb(30, 218, 86);
+    height:10px;
+
+}
+
+/* .grid:hover{
+    background-color: aquamarine;
+    color: rgb(53,46,46);
+} */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+
+</head>
+<body>
+    <div id="titleBar">
+
+        <h1 class="wSummary">Etch-A-Sketch!</h1>
+        <p class="wSummaryP">Will I ever be able to make this work?</p>
+
+    </div>
+
+    <div id="gameArea">
+
+    </div>
+
+    <script>
+
+        let gmArea = document.getElementById("gameArea");
+        let row;
+        let divCell;
+        let columnString = 'grid-template-columns:';
+        let rowString = 'grid-template-rows:';
+
+        document.body.onload = addDivs(10);
+
+        function addDivs(userVal){
+            for (let i = 1; i<1537; i++){
+                row = document.createElement('div');
+                row.id = "div" + "c_" + i;
+                row.className = "row";
+                for (let x = 1; x<1537;x++){
+                    divCell = document.createElement('div');
+                    divCell.id = "div" + "r_" + x;
+                    divCell.className = "grid";
+                    divCell.innerText = (i * userVal) + x;
+                    row.appendChild(divCell);
+                }
+                //let newText = document.createTextNode(i);
+                //newDiv.appendChild(newText);
+                gmArea.appendChild(row);
+            }
+
+            let focusGrid = document.getElementsByClassName('grid');
+        }
+        
+        document.addEventListener('mouseover', function (e) {
+            if ((e.target.className == 'grid')){
+                e.target.className = 'gridHL';
+            }
+/*             else if ((e.target.className == 'gridHL')){
+                e.target.className = 'grid';
+            } */
+            });
+
+    </script>
+</body>
+</html>
